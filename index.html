@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahmoud Yasser | Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+    .project {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans text-gray-800">
+  <div class="container mx-auto px-4 py-12 md:py-16">
+    <h1 class="text-4xl md:text-5xl font-bold text-center text-indigo-900 mb-12 fade-in">
+      My Projects
+    </h1>
+
+    <div class="space-y-8">
+      <div class="project bg-white p-6 rounded-lg border-l-4 border-indigo-600 shadow-md fade-in" style="animation-delay: 0.1s;">
+        <div class="flex justify-between items-center">
+          <h2 class="text-2xl font-semibold text-indigo-900">Smart Shopping Cart System</h2>
+          <a href="https://github.com/SSC-GP25/Smart-Shopping-Cart-SSC" target="_blank" class="text-sm bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">View on GitHub</a>
+        </div>
+        <p class="text-sm text-gray-500 mt-1">Graduation Project | Embedded Systems, IoT | July 2025 | Grade: A+</p>
+        <p class="text-gray-600 text-sm mt-2">Technologies: ESP32, GM65, HX711, GPS, ESP32-CAM, UART, HTTP, WebSocket, QR</p>
+        <ul class="list-disc pl-5 mt-4 space-y-2 text-gray-700">
+          <li>Developed an IoT-based cart with product scanning, weight validation, and location tracking.</li>
+          <li>Controlled GM65 scanner and GPS dynamically via WebSocket to save power.</li>
+          <li>Integrated ESP32-CAM for object detection and shopping activity monitoring.</li>
+          <li>Connected devices to a cloud server for user verification and product updates.</li>
+          <li>Enabled QR-based user login and automated cashier-less checkout.</li>
+        </ul>
+      </div>
+
+      <div class="project bg-white p-6 rounded-lg border-l-4 border-indigo-600 shadow-md fade-in" style="animation-delay: 0.2s;">
+        <div class="flex justify-between items-center">
+          <h2 class="text-2xl font-semibold text-indigo-900">Lab Automation System</h2>
+        </div>
+        <p class="text-sm text-gray-500 mt-1">Embedded Systems, IoT | April 2025</p>
+        <p class="text-gray-600 text-sm mt-2">Technologies: ESP32, Raspberry Pi, painlessMesh, MFRC522, ESP32-CAM, HTTP, WebSocket, UART</p>
+        <ul class="list-disc pl-5 mt-4 space-y-2 text-gray-700">
+          <li>Created a decentralized sensor network using the painlessMesh protocol.</li>
+          <li>Monitored lab conditions (temperature, flame, smoke, motion) with real-time alerts.</li>
+          <li>Secured cabinets using RFID authentication with MFRC522.</li>
+          <li>Streamed live video via ESP32-CAM for anomaly detection and surveillance.</li>
+          <li>Connected nodes to a backend server with HTTP and WebSocket for remote access.</li>
+        </ul>
+      </div>
+
+      <div class="project bg-white p-6 rounded-lg border-l-4 border-indigo-600 shadow-md fade-in" style="animation-delay: 0.3s;">
+        <div class="flex justify-between items-center">
+          <h2 class="text-2xl font-semibold text-indigo-900">Automated Garage and Fire Safety System</h2>
+          <a href="https://github.com/MahmoudYasser10/ECU" target="_blank" class="text-sm bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">View on GitHub</a>
+        </div>
+        <p class="text-sm text-gray-500 mt-1">Embedded Systems | January 2024</p>
+        <p class="text-gray-600 text-sm mt-2">Technologies: ATmega32, UART, PIR, Servo Motor, Flame Sensor, Keypad</p>
+        <ul class="list-disc pl-5 mt-4 space-y-2 text-gray-700">
+          <li>Automated garage gate using dual PIR sensors and servo motor control.</li>
+          <li>Designed a fire detection system with auto and password-based override.</li>
+          <li>Synced garage and fire modules using UART between two microcontrollers.</li>
+        </ul>
+      </div>
+
+      <div class="project bg-white p-6 rounded-lg border-l-4 border-indigo-600 shadow-md fade-in" style="animation-delay: 0.4s;">
+        <div class="flex justify-between items-center">
+          <h2 class="text-2xl font-semibold text-indigo-900">Smart Home System</h2>
+          <a href="https://github.com/MahmoudYasser10/Smart-Home-Embedded-Systems" target="_blank" class="text-sm bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">View on GitHub</a>
+        </div>
+        <p class="text-sm text-gray-500 mt-1">Embedded Systems | September 2023</p>
+        <p class="text-gray-600 text-sm mt-2">Technologies: ATmega32, UART, ADC, Temperature/Light Sensors</p>
+        <ul class="list-disc pl-5 mt-4 space-y-2 text-gray-700">
+          <li>Developed a C-based automation system with sensor-driven lighting and fan control.</li>
+          <li>Enabled manual and automatic operation modes for convenience.</li>
+          <li>Used UART for inter-node communication in the home network.</li>
+        </ul>
+      </div>
+
+      <div class="project bg-white p-6 rounded-lg border-l-4 border-indigo-600 shadow-md fade-in" style="animation-delay: 0.5s;">
+        <div class="flex justify-between items-center">
+          <h2 class="text-2xl font-semibold text-indigo-900">Clinic Management System</h2>
+          <a href="https://github.com/MahmoudYasser10/The_Clinic_Management_System" target="_blank" class="text-sm bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">View on GitHub</a>
+        </div>
+        <p class="text-sm text-gray-500 mt-1">C Programming | August 2023</p>
+        <p class="text-gray-600 text-sm mt-2">Technologies: C, GCC, Linked Lists</p>
+        <ul class="list-disc pl-5 mt-4 space-y-2 text-gray-700">
+          <li>Built a console-based clinic management tool with dynamic memory allocation.</li>
+          <li>Used linked list structures to manage patient data efficiently.</li>
+          <li>Developed and debugged using Notepad++ and GCC.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
